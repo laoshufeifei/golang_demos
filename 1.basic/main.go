@@ -85,6 +85,7 @@ func main() {
 	intSlice = append(intSlice, 2, 3)
 	// [0 0 0 1 2 3]
 	fmt.Println(intSlice)
+	fmt.Printf("intSlice is %T, %[1]v\n", intSlice)
 
 	// map
 	ages := map[string]int{
