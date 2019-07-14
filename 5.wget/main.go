@@ -22,8 +22,10 @@ func main() {
 	// url := "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/releases/18.04/ubuntu-18.04.2-live-server-amd64.iso"
 
 	response, err := http.Get(url)
+	if response != nil {
+		defer response.Body.Close()
+	}
 	checkFatalError(err)
-	defer response.Body.Close()
 
 	// print header
 	fmt.Printf("http header for %s is:\n", url)
