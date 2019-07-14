@@ -4,3 +4,5 @@
 *.png
 *.txt
 *.exe
+/12.mod_demo/go.mod
+/12.mod_demo/go.sum
