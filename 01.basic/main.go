@@ -87,6 +87,11 @@ func main() {
 	fmt.Println(intSlice)
 	fmt.Printf("intSlice is %T, %[1]v\n", intSlice)
 
+	var times [3][0]int
+	for range times {
+		fmt.Println("hello")
+	}
+
 	// map
 	ages := map[string]int{
 		"alice":   3,
@@ -132,5 +137,3 @@ func testWriteFile(name string) bool {
 	newFile.WriteString("abc")
 	return true
 }
-
-
