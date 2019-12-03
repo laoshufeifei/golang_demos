@@ -50,6 +50,8 @@ func main() {
 		fmt.Printf("i: %d, s: %c\n", i, s)
 		letters = append(letters, s)
 	}
+	fmt.Println(letters)
+	fmt.Println([]rune(unicodeCh))
 
 	// string
 	s1 = "hello, world"
